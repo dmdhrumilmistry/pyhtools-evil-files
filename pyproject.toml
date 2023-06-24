@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pyhtools-evil-files"
+version = "0.1.0"
+description = "contains Evil Files separated from PyHTools project to comply with PyPi's acceptable use policy"
+authors = ["Dhrumil Mistry <56185972+dmdhrumilmistry@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "pyhtools_evil_files"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0"
+paramiko = "^3.2.0"
+wmi = {version = "^1.5.1", optional = true}
+pynput = "^1.7.6"
+requests = "^2.31.0"
+pytelegrambotapi = "^4.12.0"
+psutil = "^5.9.5"
+
+[tool.poetry.extras]
+windows = ["wmi"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
